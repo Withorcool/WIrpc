@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "wirichpresence",
+  "version": "${version}",
+  "name": "WI Rich Presence",
+  "icon": "assets/wirichpresence/icon.png",
+  "description": "",
+  "authors": [
+    "Withor"
+  ],
+  "contact": {
+    "repo": "https://github.com/Withorcool/WIrpc"
+  },
+  "license": "All-Rights-Reserved",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.withorcc.simplediscordrichpresence.SimpleDiscordRichPresence"
+    ],
+
+    "modmenu": [
+      "com.withorcc.simplediscordrichpresence.config.ModMenuEntryPoint"
+    ]
+  },
+  "mixins": [
+    "simplediscordrichpresence.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
